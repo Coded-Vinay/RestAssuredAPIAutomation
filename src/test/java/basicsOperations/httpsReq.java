@@ -28,7 +28,7 @@ public class httpsReq {
     }
 
     @Test(priority = 3)
-    void addUsersaveID() {
+    void addUserSaveID() {
         HashMap<Object, Object> data = new HashMap<>();
         data.put("name", "test");
         data.put("Salary", "1234");
