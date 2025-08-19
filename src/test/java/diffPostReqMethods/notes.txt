@@ -1,0 +1,5 @@
+
+Post request using hashmap
+post request using Org,json
+post using POJO class
+post request using external files
