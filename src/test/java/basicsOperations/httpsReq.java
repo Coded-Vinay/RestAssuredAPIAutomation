@@ -24,7 +24,9 @@ public class httpsReq {
         data.put("Salary", "1234");
         data.put("age", "23");
 
-        given().contentType("application/json").body(data).header("x-api-key", "reqres-free-v1").when().post("https://reqres.in/api/users").then().log().all();
+        given().contentType("application/json").body(data).header("x-api-key", "reqres-free-v1")
+                .when().post("https://reqres.in/api/users")
+                .then().log().all();
     }
 
     @Test(priority = 3)
