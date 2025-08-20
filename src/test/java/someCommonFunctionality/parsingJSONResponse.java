@@ -10,10 +10,8 @@ import static io.restassured.RestAssured.given;
 
 public class parsingJSONResponse {
 
-
     @Test
     void usingJSONObject() {
-
         Response response = given().contentType(ContentType.JSON).when().get("https://reqres.in/api/users?page=2");
         JSONObject jo = new JSONObject(response.asString());
         for (int i = 0; i < jo.getJSONArray("data").length(); i++) {
@@ -31,6 +29,4 @@ public class parsingJSONResponse {
 
 
     }
-
-
 }
